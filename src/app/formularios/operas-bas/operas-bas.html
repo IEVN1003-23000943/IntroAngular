@@ -1,0 +1,40 @@
+
+<div class="col-6">
+  <div class="mb3">
+    <form action="">
+      <div class="form-group pt-4">
+        <label for="num1">Numero1:</label>
+        <input [(ngModel)]="num1" type="text" name="num1" class="form-control" id="num1" placeholder="Ingresa Numero 1">
+      </div>
+      <div class="form-group pt-4">
+        <label for="num1">Numero2:</label>
+        <input [(ngModel)]="num2" type="text" name="num2" class="form-control" id="num2" placeholder="Ingresa Numero 2">
+      </div>
+      <!-- <br>
+      <button (click)="sumar()" type="button" class="btn btn-primary">sumar</button>
+      <br>
+      <button (click)="restar()" type="button" class="btn btn-primary">restar</button>
+      <br>
+      <button (click)="multiplicar()" type="button" class="btn btn-primary">multiplicar</button>
+      <br>
+      <button (click)="division()" type="button" class="btn btn-primary">dividir</button>
+      <br> -->
+      <input type="radio" id="opcionSum" name="grupoOpera" value="sumar" [(ngModel)]="operacionSeleccionada">
+      <label for="opcionSum">Sumar +</label>
+      <br>
+      <input type="radio" id="opcionRes" name="grupoOpera" value="restar" [(ngModel)]="operacionSeleccionada">
+      <label for="opcionRes">Restar -</label>
+      <br>
+      <input type="radio" id="opcionMul" name="grupoOpera" value="multiplicar" [(ngModel)]="operacionSeleccionada">
+      <label for="opcionMul">Multiplicar *</label>
+      <br>
+      <input type="radio" id="opcionDiv" name="grupoOpera" value="dividir" [(ngModel)]="operacionSeleccionada">
+      <label for="opcionDiv">Dividir /</label>
+      <br>
+      <button type="button" class="btn btn-primary" (click)="ejecutarOperacion()">Calcular</button>
+    </form>
+  </div>
+</div>
+<div class="col-6">
+  <h2>Resultado: {{resultado}}</h2>
+</div>
