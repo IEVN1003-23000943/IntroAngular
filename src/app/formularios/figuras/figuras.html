@@ -1,0 +1,34 @@
+
+<div class="col-6">
+  <div class="mb3">
+    <form action="">
+      <div class="form-group pt-4">
+        <label for="num1">Base de la figura</label>
+        <input [(ngModel)]="bas" type="text" name="bas" class="form-control" id="bas" placeholder="Ingresa la base de la figura">
+      </div>
+      <div class="form-group pt-4">
+        <label for="num1">Altura o radio de la figura</label>
+        <input [(ngModel)]="alt" type="text" name="alt" class="form-control" id="alt" placeholder="Ingresa la altura o el radio">
+      </div>
+      <input type="radio" id="opcuad" name="grupoFig" value="cuad" [(ngModel)]="figuraSelec">
+      <label for="opcionSum">Cuadrado</label>
+      <br>
+      <input type="radio" id="oprec" name="grupoFig" value="rec" [(ngModel)]="figuraSelec">
+      <label for="opcionRes">Rectangulo</label>
+      <br>
+      <input type="radio" id="optri" name="grupoFig" value="tri" [(ngModel)]="figuraSelec">
+      <label for="opcionMul">Triangulo</label>
+      <br>
+      <input type="radio" id="oppen" name="grupoFig" value="pen" [(ngModel)]="figuraSelec">
+      <label for="opcionDiv">pentagono</label>
+      <br>
+      <input type="radio" id="opcir" name="grupoFig" value="cir" [(ngModel)]="figuraSelec">
+      <label for="opcionDiv">circulo</label>
+      <br>
+      <button type="button" class="btn btn-primary" (click)="ejecutarOperacion()">Calcular</button>
+    </form>
+  </div>
+</div>
+<div class="col-6">
+  <h2>El area es: {{area}}</h2>
+</div>
