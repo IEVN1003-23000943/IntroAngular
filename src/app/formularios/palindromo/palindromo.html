@@ -1,0 +1,12 @@
+<div class="col-6">
+  <div class="form-group pt-4">
+    <label for="frace">Cual es la palabra o frase</label><br>
+    <input type="text" name="frace" id="frace" [(ngModel)]="frace" placeholder="cadena de caracteres" class="form-control"><br>
+    <button type="button" class="btn btn-primary" (click)="Leercad()">Revisar palabra</button>
+  </div>
+  <div class="mt-3">
+    <h3>Vocales: {{ voca }} cuales son {{vocales}}</h3>
+    <h3>Consonantes: {{ cons }} cuales son {{consonantes}}</h3>
+    <h3>{{ palin }}</h3>
+  </div>
+</div>

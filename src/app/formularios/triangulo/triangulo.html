@@ -1,0 +1,47 @@
+
+<div class="col-6">
+  <div class="mb3">
+    <form action="">
+      <h2>Distancia entre dos puntos</h2>
+      <div class="form-group pt-4">
+        <label for="num1">valor de x1:</label>
+        <input [(ngModel)]="x1" type="text" name="x1" class="form-control" id="x1" placeholder="Ingresa x1">
+      </div>
+      <div class="form-group pt-4">
+        <label for="num1">valor de y1:</label>
+        <input [(ngModel)]="y1" type="text" name="y1" class="form-control" id="y1" placeholder="Ingresa y1">
+      </div>
+      <br>
+      <div class="form-group pt-4">
+        <label for="num1">valor de x2:</label>
+        <input [(ngModel)]="x2" type="text" name="x2" class="form-control" id="x2" placeholder="Ingresa x2">
+      </div>
+      <div class="form-group pt-4">
+        <label for="num1">valor de y2:</label>
+        <input [(ngModel)]="y2" type="text" name="y2" class="form-control" id="y2" placeholder="Ingresa y2">
+      </div>
+      <br>
+      <div class="form-group pt-4">
+        <label for="num1">valor de x3:</label>
+        <input [(ngModel)]="x3" type="text" name="x3" class="form-control" id="x3" placeholder="Ingresa x3">
+      </div>
+      <div class="form-group pt-4">
+        <label for="num1">valor de y3:</label>
+        <input [(ngModel)]="y3" type="text" name="y3" class="form-control" id="y3" placeholder="Ingresa y3">
+      </div>
+      <br>
+      <button (click)="analizar()" type="button" class="btn btn-primary">Analizar Puntos</button>
+      <br>
+    </form>
+  </div>
+</div>
+<div class="col-6">
+  <h3>
+    las coordenadas:
+    ({{x1}},{{y1}})
+    ({{x2}},{{y2}})
+    ({{x3}},{{y3}})
+  </h3>
+  <h2>{{resultado}}</h2>
+  <h2>{{Area}}</h2>
+</div>
